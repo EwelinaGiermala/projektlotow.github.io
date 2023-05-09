@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/planes.png">
+    <title> Dream travels</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<body>
+<!-- START NAVBAR -->
+    <nav class="navbar navbar-expand-lg shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img class="img-logo" src="img/airplane.png" alt="logo-airplane" class="img-fluid"/> <br>Dream Travels</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars fa-beat"></i>
+                </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#zarezerwuj">Zarezerwuj</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#hotels">Hotele</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="rejestracja.html">Rejestracja</a>
+                </li>
+                <div class="dropdown">
+                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                        <i class="fa-solid fa-user"></i> Zaloguj się
+                    </button>
+                    <form class="dropdown-menu p-5 ">
+                        <div class="mb-3">
+                            <label for="exampleDropdownFormEmail2" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@.com">
+                        </div>
+                        <div class="mb-3">
+                        <label for="exampleDropdownFormPassword2" class="form-label">Hasło</label>
+                        <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Hasło">
+                        </div>
+                        <div class="mb-3">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                                <label class="form-check-label" for="dropdownCheck2">
+                                Zapamiętaj
+                                </label>
+                        </div>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Zaloguj się</button>
+                    </form>
+                    </div>
+            </ul>
+        </div>
+        </div>
+    </nav>
+<!-- END NAVBAR -->
+<!-- START HEADER -->
+    <div class="booking-ticets2">
+    <h1 id="zarezerwuj">Rezerwuj online</h1>
+    <h2 id="home"><i class="fa-solid fa-ticket fa-beat"></i> bilety lotnicze</h2>
+    <div class="booking-ticets">
+        <div class="input-group row" >
+            <label class="col-form-label" for="inputGroupSelect01"> <i class="fa-solid fa-location-dot"></i> Miejsce wylotu</label>
+            <select class="form-select" id="inputGroupSelect01" name="departure">
+                <option selected></option>
+                <option value="departurePlace">Miejsce wylotu</option>
+                <option value="Katowice">Katowice</option>
+                <option value="Wrocław">Wrocław</option>
+                <option value="Warszawa">Warszawa</option>
+            </select>
+        </div>
+        <div class="input-group row">
+            <label class="col-form-label" for="inputGroupSelect02"><i class="fa-solid fa-location-dot"></i> Miejsce przylotu</label>
+            <select class="form-select" id="inputGroupSelect02" name="arrival">
+                <option selected></option>
+                <option value="arrivalPlace">Miejsce przylotu</option>
+                <option value="NowyJork">Nowy Jork</option>
+                <option value="Paryż">Paryż</option>
+                <option value="Rzym">Rzym</option>
+            </select>
+        </div>
+        <div class="input-group row" >
+            <label class=" col-form-label" for="inputGroupSelect02"><i class="fa-solid fa-user-group"></i> Liczba pasażerów</label>
+            <select class="form-select" id ="passengers"  name="passengers">
+                <option selected></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="input-group row" >
+            <label class=" col-form-label" for="inputGroupSelect02"><i class="fa-solid fa-suitcase"></i> Bagaż</label>
+            <select class="form-select" id ="luggage"  name="luggage">
+                <option selected></option>
+                <option value="1">Bagaż podręczny</option>
+                <option value="2">Zestaw Bagażu podręcznego</option>
+                <option value="3">Bagaż rejestrowany</option>
+                <option value="4">Bagaż rejestrowany x 2</option>
+            </select>
+        </div>
+            <div class="input-group row">
+                <label class="col-form-label" for="inputGroupSelect01"><i class="fa-regular fa-calendar-days"></i> Data wylotu
+                    <input type="date" name="date-departure" id="departure" class="from-control">
+                </label>  
+            </div>
+            <div class="input-group row">
+                <label class=" col-form-label" for="inputGroupSelect02"><i class="fa-regular fa-calendar-days"></i> Data przylotu 
+                    <input type="date" name="date-arrival" id="return" class="from-control">
+                </label>
+            </div>
+        <a class="btn btn-secondary btn-lg"  id="btn-search" role="button">Szukaj <i class="fa-solid fa-magnifying-glass fa-beat"></i> </a></div>
+        </div>
+    </div>
+    </div>
+    </header>
+<!-- END HEADER -->
+    <main>
+        <h2 id="hotels"><i class="fa-solid fa-hotel fa-fade"></i>Szukaj hotelu</h2>
+        <div class="card-group">
+            <div class="card">
+                <img src="img/Newyork.jpg" class="card-img-top" alt="Newyork">
+                    <div class="card-body">
+                        <button class="btn-hotels"  onclick=location.href='https://www.booking.com/searchresults.pl.html?ss=Nowy+Jork%2C+New+York+State%2C+Stany+Zjednoczone+Ameryki&ssne=Pary%C5%BC&ssne_untouched=Pary%C5%BC&label=yho748jc-1DCAEoggI46AdIHlgDaLYBiAEBmAEeuAEXyAEM2AED6AEB-AECiAIBqAIDuALpsqmiBsACAdICJGE3YTBiZDMzLTRmMjUtNDc2Yi1iN2YxLTUzY2E0ZDMzZWUxM9gCBOACAQ&aid=397646&lang=pl&sb=1&src_elem=sb&src=searchresults&dest_id=20088325&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=pl&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=7ddc500f6d65021d&ac_meta=GhA3ZGRjNTAwZjZkNjUwMjFkIAAoATICcGw6BU5vd3kgQABKAFAA&checkin=2023-09-30&checkout=2023-10-01&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure'><i class="fa-solid fa-hotel"></i> Nowy York</button>
+                    </div>
+            </div>
+            <div class="card">
+                <img src="img/Rome.jpg" class="card-img-top" alt="Rome">
+                    <div class="card-body">
+                        <button class="btn-hotels" type="button"  onclick=location.href='https://www.booking.com/searchresults.pl.html?ss=Rzym%2C+Lacjum%2C+W%C5%82ochy&efdco=1&label=yho748jc-1DCAEoggI46AdIHlgDaLYBiAEBmAEeuAEXyAEM2AED6AEB-AECiAIBqAIDuALpsqmiBsACAdICJGE3YTBiZDMzLTRmMjUtNDc2Yi1iN2YxLTUzY2E0ZDMzZWUxM9gCBOACAQ&aid=397646&lang=pl&sb=1&src_elem=sb&src=index&dest_id=-126693&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=pl&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=11994f34a5910436&ac_meta=GhAxMTk5NGYzNGE1OTEwNDM2IAAoATICcGw6BFJ6eW1AAEoAUAA%3D&checkin=2023-09-30&checkout=2023-10-01&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure'><i class="fa-solid fa-hotel"></i> Rzym</button>
+                    </div>
+            </div>
+            <div class="card">
+                <img src="img/Paris.jpg" class="card-img-top" alt="Paris">
+                    <div class="card-body">
+                        <button class="btn-hotels " type="button" onclick=location.href='https://www.booking.com/searchresults.pl.html?ss=Pary%C5%BC%2C+%C3%8Ele+de+France%2C+Francja&ssne=Rzym&ssne_untouched=Rzym&label=yho748jc-1DCAEoggI46AdIHlgDaLYBiAEBmAEeuAEXyAEM2AED6AEB-AECiAIBqAIDuALpsqmiBsACAdICJGE3YTBiZDMzLTRmMjUtNDc2Yi1iN2YxLTUzY2E0ZDMzZWUxM9gCBOACAQ&aid=397646&lang=pl&sb=1&src_elem=sb&src=searchresults&dest_id=-1456928&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=pl&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=1da14ffd90310194&ac_meta=GhAxZGExNGZmZDkwMzEwMTk0IAAoATICcGw6BlBhcnnFvEAASgBQAA%3D%3D&checkin=2023-09-30&checkout=2023-10-01&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure'><i class="fa-solid fa-hotel"></i> Paryż</button>
+                    </div>
+            </div>
+        </div>
+<!-- START WEATHER  -->
+<div class="weather">
+    <h2><i class="fa-solid fa-cloud-sun fa-beat"></i> Aktualna pogoda</h2>
+<div id="ww_32f9af0cc87ba" v='1.3' loc='id' a='{"t":"responsive","lang":"pl","sl_lpl":1,"ids":["wl3846"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"rgba(204,153,0,1)","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","cl_odd":"#00000000"}'>Weather Data Source: <a href="https://wetterlabs.de/wetter_katowice/woche/" id="ww_32f9af0cc87ba_u" target="_blank">wetter 7 tage Katowice</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_32f9af0cc87ba"></script>
+<div id="ww_bed855fb39742" v='1.3' loc='id' a='{"t":"responsive","lang":"pl","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"rgba(204,153,0,1)","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","cl_odd":"#00000000"}'>Weather Data Source: <a href="https://wetterlabs.de/wetter_breslau/woche/" id="ww_bed855fb39742_u" target="_blank">7 tage wetter Breslau</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_bed855fb39742"></script>
+<div id="ww_ad80bf16e0bd5" v='1.3' loc='id' a='{"t":"responsive","lang":"pl","sl_lpl":1,"ids":["wl7640"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"rgba(204,153,0,1)","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","cl_odd":"#00000000"}'>Weather Data Source: <a href="https://wetterlang.de/warschau_wetter_30_tage/" id="ww_ad80bf16e0bd5_u" target="_blank">30 tage Warschau wetter</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_ad80bf16e0bd5"></script>
+</div>
+<!-- END WEATHER -->
+</main>
+<!-- START FOOTER -->
+<footer class=" mt-5 shadow">
+<!-- START DIGITAL CLOCK  -->
+<div class="datetime">
+    <div class="time">
+        <div id="hour">00</div>
+        <span>:</span>
+        <div id="minute">00</div>  
+        <span>:</span>     
+        <div id="seconds">00</div>
+    </div>
+</div>
+<!-- END DIGITAL CLOCK  -->
+<div class="container text-light text-center">
+        <p class="display-5 fs-2"> Rezerwacja biletu lotniczego</p>
+        <small class="text-white-50">&copy; Copyright by Ewelina Giermala.</small>
+</div> 
+</footer>
+<!-- END FOOTER -->
+<!-- START SCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+<!-- END SCRIPT -->
+</body>
+</html>
